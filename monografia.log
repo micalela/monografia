@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  5 DEC 2025 06:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  6 DEC 2025 06:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -412,30 +412,36 @@ Package newfloat Info: Document class `amsbook' detected (original).
 )
 \c@caption@flags=\count329
 \c@continuedfloat=\count330
+) (O:\programas\miktex\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count331
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count332
 )
-\c@df=\count331
+\c@df=\count333
  (monografia.aux)
 \openout1 = `monografia.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
  (O:\programas\miktex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
  (O:\programas\miktex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -476,16 +482,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 (O:\programas\miktex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count332
+\scratchcounter=\count334
 \scratchdimen=\dimen286
 \scratchbox=\box67
-\nofMPsegments=\count333
-\nofMParguments=\count334
+\nofMPsegments=\count335
+\nofMParguments=\count336
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count335
+\MPscratchCnt=\count337
 \MPscratchDim=\dimen287
-\MPnumerator=\count336
-\makeMPintoPDFobject=\count337
+\MPnumerator=\count338
+\makeMPintoPDFobject=\count339
 \everyMPtoPDFconversion=\toks45
 ) (O:\programas\miktex\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -518,42 +524,112 @@ Cap\'itulo 2
 <img mono/simplices.png, id=35, 3657.665pt x 1268.74pt>
 File: img mono/simplices.png Graphic file (type png)
 <use img mono/simplices.png>
-Package pdftex.def Info: img mono/simplices.png  used on input line 109.
+Package pdftex.def Info: img mono/simplices.png  used on input line 114.
 (pdftex.def)             Requested size: 209.12775pt x 72.53963pt.
-[5 <./img mono/simplices.png>]
-<img mono/simplices estandar.png, id=40, 3501.08pt x 1336.995pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5]
+<img mono/simplices estandar.png, id=41, 3501.08pt x 1336.995pt>
 File: img mono/simplices estandar.png Graphic file (type png)
 <use img mono/simplices estandar.png>
-Package pdftex.def Info: img mono/simplices estandar.png  used on input line 126.
+Package pdftex.def Info: img mono/simplices estandar.png  used on input line 131.
 (pdftex.def)             Requested size: 209.12775pt x 79.84901pt.
- [6 <./img mono/simplices estandar.png>] [7] [8]
+ [6 <./img mono/simplices.png> <./img mono/simplices estandar.png>]
+<img mono/cociente.png, id=45, 3625.545pt x 1951.29pt>
+File: img mono/cociente.png Graphic file (type png)
+<use img mono/cociente.png>
+Package pdftex.def Info: img mono/cociente.png  used on input line 170.
+(pdftex.def)             Requested size: 167.29964pt x 90.03732pt.
+<img mono/cociente2.png, id=46, 3625.545pt x 1951.29pt>
+File: img mono/cociente2.png Graphic file (type png)
+<use img mono/cociente2.png>
+Package pdftex.def Info: img mono/cociente2.png  used on input line 173.
+(pdftex.def)             Requested size: 167.29964pt x 90.03732pt.
+ [7 <./img mono/cociente.png> <./img mono/cociente2.png>]
+<img mono/norient2.png, id=53, 1472.50125pt x 1641.13126pt>
+File: img mono/norient2.png Graphic file (type png)
+<use img mono/norient2.png>
+Package pdftex.def Info: img mono/norient2.png  used on input line 198.
+(pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
+<img mono/norient3.png, id=54, 1472.50125pt x 1641.13126pt>
+File: img mono/norient3.png Graphic file (type png)
+<use img mono/norient3.png>
+Package pdftex.def Info: img mono/norient3.png  used on input line 203.
+(pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+[]\OT1/cmr/m/sc/10 (b) |$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$ y
+ []
+
+<img mono/borient2.png, id=55, 1472.50125pt x 1641.13126pt>
+File: img mono/borient2.png Graphic file (type png)
+<use img mono/borient2.png>
+Package pdftex.def Info: img mono/borient2.png  used on input line 215.
+(pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
+[]\OT1/cmr/m/sc/10 (a) |$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]\OT1/cmr/m/n/10 ]$,
+ []
+
+<img mono/borient3.png, id=56, 1472.50125pt x 1641.13126pt>
+File: img mono/borient3.png Graphic file (type png)
+<use img mono/borient3.png>
+Package pdftex.def Info: img mono/borient3.png  used on input line 220.
+(pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--221
+[]\OT1/cmr/m/sc/10 (b) |$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--221
+\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--221
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$ y
+ []
+
+[8 <./img mono/norient2.png> <./img mono/norient3.png> <./img mono/borient2.png> <./img mono/borient3.png>] [9] [10]
 Cap\'itulo 3
-[9
+[11
 
 
-] [10
+] [12
 
 
 ]
 Cap\'itulo 4
-[11] (monografia.aux)
+[13] (monografia.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16864 strings out of 467871
- 329882 string characters out of 5430401
- 810993 words of memory out of 5000000
- 45293 multiletter control sequences out of 15000+600000
- 637922 words of font info for 78 fonts, out of 8000000 for 9000
+ 17028 strings out of 467871
+ 333300 string characters out of 5430401
+ 810307 words of memory out of 5000000
+ 45455 multiletter control sequences out of 15000+600000
+ 639277 words of font info for 84 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 117i,7n,121p,590b,897s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on monografia.pdf (13 pages, 9800958 bytes).
+ 117i,8n,121p,591b,897s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on monografia.pdf (15 pages, 32187938 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
+ 150 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

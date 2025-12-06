@@ -27,6 +27,7 @@
 \usepackage{todonotes}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[figurename=Imagen]{caption}
+\usepackage{subcaption}
 
 \theoremstyle{definition}
 \newtheorem{df}{Definición}[chapter]
@@ -96,19 +97,23 @@ Esta es una forma de notar el $(n-1)$-símplice obtenido al sacar $v_i$ del conj
 
 Diremos que $[v_0,\dots,\hat{v_i},\dots,v_n]$ es una cara de $[v_0,\dots,v_n]$.\br
 
+\begin{obs}
+El borde de un $n$-símplice $\Delta^n$ es la unión de sus $n+1$ caras, lo notaremos $\partial\Delta^n$. \br
+\end{obs}
+
 Llamaremos aristas a los $2$-símplices con vértices $v_i, v_j\in\{v_0,\dots,v_n\}$. Estas también heredan el orden de $[v_0,\dots,v_n]$, y por lo tanto las notamos $[v_i,v_j]$ si $i<j$.
 \end{df}
 
 % Al definirlo así, implícitamente le estamos dando a los vértices de $[v_0,\dots,\hat{v_i},\dots,v_n]$ el orden heredado de restringir el orden de $[v_0,\dots,v_n]$ al nuevo conjunto de vértices. \br
 
-Un ejemplo de $3$-símplice es un tetraedro en $\R^3$, un $2$-símplice es un triángulo en $\R^2$, un $1$-símplice es un intervalo en $\R$, y un $0$-símplice es un punto.\br
+Como se muestra en la imagen \ref{simplices}, un ejemplo de $3$-símplice es un tetraedro en $\R^3$, un $2$-símplice es un triángulo en $\R^2$, un $1$-símplice es un intervalo en $\R$, y un $0$-símplice es un punto.\br
 
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\linewidth]{img mono/simplices.png}
     \caption{$n$-símplices con las orientaciones de sus aristas, $n\in\{0,1,2,3\}$}
-    \label{fig:placeholder}
+    \label{simplices}
 \end{figure}
 
 \comm{las imágenes no son finales, eventualmente las voy a hacer en digital}
@@ -119,12 +124,13 @@ Llamaremos $n$-símplice estándar al conjunto $$\Delta^n := \Bigl\{(x_0,\dots,x
 
 Los vértices de este $n$-símplice son los que conforman la base canónica de $\R^{n+1}$. Si notamos a estos puntos $e_1,\dots,e_{n+1}$, otra forma de escribir este conjunto es $$\Delta^n=[e_1,\dots,e_{n+1}] \subset \R^{n+1}$$\br
 
-Para $n=2$, el $2$-símplice estándar $\Delta^2$ es el triángulo en $\R^3$ con vértices $(1,0,0)$, $(0,1,0)$ y $ (0,0,1)$. Con $n=1$, el $1$-símplice estándar es el segmento que va de $(1,0)$ a $(0,1)$ en $\R^2$. \br
+Para $n=2$, el $2$-símplice estándar $\Delta^2$ es el triángulo en $\R^3$ con vértices $(1,0,0)$, $(0,1,0)$ y $ (0,0,1)$. Con $n=1$, el $1$-símplice estándar es el segmento que va de $(1,0)$ a $(0,1)$ en $\R^2$. Esto se muestra en la imagen \ref{estandar}.\br
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\linewidth]{img mono/simplices estandar.png}
     \caption{$n$-símplices estándar, $n\in\{0,1,2\}$}
+    \label{estandar}
 \end{figure}
 
 \begin{df}
@@ -149,31 +155,84 @@ Para empezar, vamos a definir lo que será una estructura de $\Delta$-complejo p
         \item Un conjunto $U\subset X$ es abierto $\iff$ $\sigma_\alpha^{-1}(U)$ es abierto para todo $\alpha$.
     \end{enumerate}
 \end{df}\br
+
+Las condiciones $(1)$ y $(3)$ nos dicen que las funciones $\sigma_\alpha$ restrictas a $Int(\Delta^{n_\alpha})$ son homeomorfismos sobre su imagen.\br
+
 En el punto $(2)$, la equivalencia es en el siguiente sentido: \br
 
-Dada $\sigma_\alpha:\Delta^{n_\alpha}\to X$, notamos $\hat{\Delta}^{n_\alpha}$ a una cara de $\Delta^{n_\alpha}$. Consideramos $h:\Delta^{n_\alpha -1}\to\hat{\Delta}^{n_\alpha}$ el homeomorfismo canónico que manda el $\{n_\alpha -1\}$-símplice estándar a $\hat{\Delta}^{n_\alpha}$. Lo que nos dice este punto es que existe una función $\sigma_\beta:\Delta^{n_\alpha -1}\to X$ en la familia que cumple $\sigma_\beta=\sigma_\alpha\circ h$.\br
+Dada $\sigma_\alpha:\Delta^{n_\alpha}\to X$, notamos $\hat{\Delta}^{n_\alpha}$ a una cara de $\Delta^{n_\alpha}$. Consideramos $h:\Delta^{n_\alpha -1}\to\hat{\Delta}^{n_\alpha}$ el homeomorfismo canónico que manda el $\{n_\alpha -1\}$-símplice estándar a $\hat{\Delta}^{n_\alpha}$. Lo que nos dice este punto es que existe una función $\sigma_\beta:\Delta^{n_\alpha -1}\to X$ en la familia que cumple $\sigma_\beta=\sigma_\alpha\circ h$. Decimos entonces que $\sigma_\alpha |_{\hat{\Delta}^{n_\alpha}}$ es equivalente a $\sigma_\beta$\br
 
-Si por cada elemento $\sigma_\alpha:\Delta^{n_\alpha}\to X$ proveniente de la estructura de $\Delta$-complejo de $X$ consideramos un $n_\alpha$-símplice $\Delta^{n_\alpha}_\alpha$, entonces $X$ es el espacio obtenido al tomar el cociente de $x\sim h(x)$ para todas las $h$ definidas como en el párrafo anterior.\br
+Si por cada elemento $\sigma_\alpha:\Delta^{n_\alpha}\to X$ proveniente de la estructura de $\Delta$-complejo de $X$ consideramos un $n_\alpha$-símplice $\Delta^{n_\alpha}_\alpha$, entonces $X$ es el espacio obtenido al tomar el cociente de $x\sim h(x)$ para todas las $h:\Delta^{n_\alpha -1}\to \hat{\Delta}^{n_\alpha}_\alpha$ definidas como en el párrafo anterior. Algunos ejemplos se muestran en la imagen \ref{cocientes}.\br
 
-\comm{esto no está escrito explicitamente en el hatcher y me da un poco de miedo estar tirando fruta pero creo que es así, igual quiero mejorar cómo está redactado}
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[]{0.4\linewidth}
+        \includegraphics[width=\linewidth]{img mono/cociente.png}
+    \end{subfigure}
+    \begin{subfigure}[]{0.4\linewidth}
+        \includegraphics[width=\linewidth]{img mono/cociente2.png}
+    \end{subfigure}
+    \caption{Cocientes de símplices}
+    \label{cocientes}
+\end{figure}
 
-Las condiciones $(1)$ y $(3)$ nos dicen que las funciones $\sigma_\alpha$ restrictas a $Int(\Delta^{n_\alpha})$ son homeomorfismos sobre su imagen.
+\comm{esto no está escrito explicitamente en el hatcher  pero creo que es así, igual quiero mejorar cómo está redactado pero no quiero abusar de los subíndices, porque sería una $h$ por cada cara de cada símplice}\br
 
-\comm{capaz decir algo más acá y poner una imagen, obs sobre hff}
+%\begin{obs}
+%Cualquier espacio con una estructura de $\Delta$-complejo va a ser Hausdorff, 
+%\end{obs}
+
+%\comm{capaz decir algo más acá y poner una imagen, obs sobre hff}
 
 \begin{df}
     Dada una estructura de $\Delta$-complejo para un espacio $X$, definimos $\dx$ como el grupo abeliano libre generado por los $\{\sigma_\alpha:\Delta^{n_\alpha}\to X \; | \; n_\alpha=n\}$. Es decir, los elementos de $\dx$, a los que llamaremos $n$-cadenas, son sumas formales finitas $\sum_{i=1}^{N} k_i\sigma_i$, con $k_i\in\N$.
 \end{df}
 
-Observar que el borde de un $n$-símplice $\Delta^n$ es la unión de sus $n+1$ caras, que notaremos $\partial\Delta^n$. \br
-\begin{df}
-Vamos a definir un homomorfismo de grupos $\partial_n:\dx\to\ddx$ al que llamaremos mapa borde, lo definiremos mediante su valor en los generadores de $\dx$, es decir, las funciones $\sigma_\alpha :\dx\to X$. 
+Nuestro objetivo ahora será definir un homomorfismo de grupos $\partial_n:\dx\to\ddx$ al que llamaremos mapa borde. Para motivar la definición primero nos enfocaremos en dimensiones $2$ y $3$, consideramos entonces las caras de $\Delta^2$ y $\Delta^3$.\br
 
-Dada $\sigma_\alpha:\dx\to X$, notamos $\Delta^n = [v_0,\dots,v_n]$ y definimos $$\partial(\sigma_\alpha):=\sum\limits_{i=0}^{k}(-1)^i \sigma|_{[v_0,\dots,\hat{v_i},\dots v_n]}$$ 
+En la imagen \ref{mal orientado} se muestra la orientación usual de las caras de cada uno de estos símplices, derivada del orden en sus vértices.\br
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/norient2.png}
+        \caption{$[v_1,v_2]$, $[v_0,v_2]$ y $[v_0,v_1]$}
+    \end{subfigure}
+    \hspace{2cm}
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/norient3.png}
+        \caption{$[v_1,v_2,v_3]$, $[v_0,v_2,v_3]$, $[v_0,v_1,v_3]$ y $[v_0,v_1,v_2]$}
+    \end{subfigure}
+    \caption{Orientación usual}
+    \label{mal orientado}
+\end{figure}
+
+A continuación, en la imagen \ref{bien orientados} ilustramos cómo quedan orientadas las caras si revertimos la orientación de los $[v_0,\dots,\hat{v_i},\dots,v_n]$ con $i$ impar.\br
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/borient2.png}
+        \caption{$[v_1,v_2]$, $-[v_0,v_2]$ y $[v_0,v_1]$}
+    \end{subfigure}
+    \hspace{2cm}
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/borient3.png}
+        \caption{$[v_1,v_2,v_3]$, $-[v_0,v_2,v_3]$, $[v_0,v_1,v_3]$ y $-[v_0,v_1,v_2]$}
+    \end{subfigure}
+    \caption{Orientación obtenida al intercalar los signos}
+    \label{bien orientados}
+\end{figure}
+
+La idea entonces es que para obtener una orientación coherente y homogénea en las caras de nuestro símplice, vamos a intercalar la orientación usual de las caras con la orientación revertida. \br
+
+\begin{df}
+
+Procedemos ahora a definir el homomorfismo $\partial_n:\dx\to\ddx$. Para esto, fijamos su valor en los generadores de $\dx$, es decir, las funciones $\displaystyle\sigma_\alpha:\Delta^n\to X$. Notando $\Delta^n=[v_0,\dots,v_n]$, definimos $$\partial(\sigma_\alpha):=\sum\limits_{i=0}^{k}(-1)^i \sigma|_{[v_0,\dots,\hat{v_i},\dots v_n]}$$ 
+
 \end{df}
 
-\comm{explicar intuición del $(-1)^i$}
-% La idea atrás del $(-1)^i$ es orientar
+%la idea atrás del $(-1)^i$ es que cada cara nos quede orientada de la misma forma. 
 
 \begin{lema}
 La composición $\partial_{n-1}\circ\partial_n :\dx\to \Delta_{n-2}(X)$ es cero.

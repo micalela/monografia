@@ -185,6 +185,8 @@ INPUT O:\programas\miktex\tex\latex\caption\caption-ams-smf.sto
 INPUT O:\programas\miktex\tex\latex\caption\caption-ams-smf.sto
 INPUT O:\programas\miktex\tex\latex\newfloat\newfloat.sty
 INPUT O:\programas\miktex\tex\latex\newfloat\newfloat.sty
+INPUT O:\programas\miktex\tex\latex\caption\subcaption.sty
+INPUT O:\programas\miktex\tex\latex\caption\subcaption.sty
 INPUT .\monografia.aux
 INPUT .\monografia.aux
 INPUT monografia.aux
@@ -255,6 +257,54 @@ INPUT .\img mono\simplices estandar.png
 INPUT .\img mono\simplices estandar.png
 INPUT .\img mono\simplices estandar.png
 INPUT .\img mono\simplices estandar.png
+INPUT .\img mono\cociente.png
+INPUT .\img mono\cociente.png
+INPUT .\img mono\cociente.png
+INPUT .\img mono\cociente.png
+INPUT .\img mono\cociente.png
+INPUT .\img mono\cociente.png
+INPUT .\img mono\cociente.png
+INPUT .\img mono\cociente2.png
+INPUT .\img mono\cociente2.png
+INPUT .\img mono\cociente2.png
+INPUT .\img mono\cociente2.png
+INPUT .\img mono\cociente2.png
+INPUT .\img mono\cociente2.png
+INPUT .\img mono\cociente2.png
+INPUT .\img mono\norient2.png
+INPUT .\img mono\norient2.png
+INPUT .\img mono\norient2.png
+INPUT .\img mono\norient2.png
+INPUT .\img mono\norient2.png
+INPUT .\img mono\norient2.png
+INPUT .\img mono\norient2.png
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmcsc10.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT .\img mono\norient3.png
+INPUT .\img mono\norient3.png
+INPUT .\img mono\norient3.png
+INPUT .\img mono\norient3.png
+INPUT .\img mono\norient3.png
+INPUT .\img mono\norient3.png
+INPUT .\img mono\norient3.png
+INPUT .\img mono\borient2.png
+INPUT .\img mono\borient2.png
+INPUT .\img mono\borient2.png
+INPUT .\img mono\borient2.png
+INPUT .\img mono\borient2.png
+INPUT .\img mono\borient2.png
+INPUT .\img mono\borient2.png
+INPUT .\img mono\borient3.png
+INPUT .\img mono\borient3.png
+INPUT .\img mono\borient3.png
+INPUT .\img mono\borient3.png
+INPUT .\img mono\borient3.png
+INPUT .\img mono\borient3.png
+INPUT .\img mono\borient3.png
 INPUT O:\programas\miktex\fonts\tfm\public\cm\cmti10.tfm
 INPUT monografia.aux
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmbx10.pfb
@@ -279,6 +329,8 @@ INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy10.pfb
