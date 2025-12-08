@@ -284,13 +284,13 @@ INPUT O:\programas\miktex\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT O:\programas\miktex\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT O:\programas\miktex\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT O:\programas\miktex\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT .\img mono\norient3.png
-INPUT .\img mono\norient3.png
-INPUT .\img mono\norient3.png
-INPUT .\img mono\norient3.png
-INPUT .\img mono\norient3.png
-INPUT .\img mono\norient3.png
-INPUT .\img mono\norient3.png
+INPUT .\img mono\norient4.png
+INPUT .\img mono\norient4.png
+INPUT .\img mono\norient4.png
+INPUT .\img mono\norient4.png
+INPUT .\img mono\norient4.png
+INPUT .\img mono\norient4.png
+INPUT .\img mono\norient4.png
 INPUT .\img mono\borient2.png
 INPUT .\img mono\borient2.png
 INPUT .\img mono\borient2.png
@@ -298,14 +298,13 @@ INPUT .\img mono\borient2.png
 INPUT .\img mono\borient2.png
 INPUT .\img mono\borient2.png
 INPUT .\img mono\borient2.png
-INPUT .\img mono\borient3.png
-INPUT .\img mono\borient3.png
-INPUT .\img mono\borient3.png
-INPUT .\img mono\borient3.png
-INPUT .\img mono\borient3.png
-INPUT .\img mono\borient3.png
-INPUT .\img mono\borient3.png
-INPUT O:\programas\miktex\fonts\tfm\public\cm\cmti10.tfm
+INPUT .\img mono\borient4.png
+INPUT .\img mono\borient4.png
+INPUT .\img mono\borient4.png
+INPUT .\img mono\borient4.png
+INPUT .\img mono\borient4.png
+INPUT .\img mono\borient4.png
+INPUT .\img mono\borient4.png
 INPUT monografia.aux
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmbx10.pfb
@@ -337,7 +336,7 @@ INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmti10.pfb
-INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\symbols\msam10.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\symbols\msbm10.pfb

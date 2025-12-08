@@ -16,6 +16,8 @@
 \newcommand{\ch}{C_{n-1}(X)}
 \newcommand{\dx}{\Delta_n(X)}
 \newcommand{\ddx}{\Delta_{n-1}(X)}
+\newcommand{\im}{\text{Im}}
+\newcommand{\Ker}{\text{Ker}}
 
 \providecommand{\comm}{\todo[inline, color=SpringGreen!40]}
 \providecommand{\duda}{\todo[inline, color=Apricot!40]}
@@ -33,12 +35,16 @@
 \newtheorem{df}{Definición}[chapter]
 \newtheorem{obs}[df]{Observación}
 \newtheorem{ex}[df]{Ejemplo}
+\newtheorem{lema}[df]{Lema}
+
+\theoremstyle{remark}
+\newtheorem*{dem}{Demostración}
 
 \theoremstyle{plain}
 \newtheorem{prop}[df]{Proposición}
 \newtheorem{teo}[df]{Teorema}
 \newtheorem{cor}[df]{Corolario}
-\newtheorem{lema}[df]{Lema}
+
 
 \title{Elementos de la Matemática}
 
@@ -84,7 +90,7 @@ En general, notamos $S^n := \{x\in\R^n : \|x\|=1\}$, y decimos que una $n-$esfer
 
 En esta sección introduciremos al lector a la teoría de homología singular. El objetivo será probar que una $(n-1)$-esfera separa $\R^n$ en dos componentes conexas, y que estas componentes conexas tienen la misma homología de un punto. \br
 
-Para empezar, definiremos lo que es un $n$-símplice:
+Para empezar, definiremos lo que es un $n$-símplice:\br
 
 \begin{df} Un $n$-símplice es el menor conjunto convexo de $\R^{m}\; (m\geq n)$ que contiene $n+1$ puntos $v_0,\dots,v_n$, tales que $v_1-v_0$, $v_2-v_0$, $\dots$, $v_n-v_0$ son linealmente independientes. Llamaremos vértices a estos $v_i$.\end{df}\br
 
@@ -92,7 +98,7 @@ En general, dado un $n$-símplice, vamos a darle un orden a sus vértices, y not
 
 \begin{df}
 Un orden en los vértices nos induce un orden en la restricción a un subconjunto de esos vértices. Haremos uso de la siguiente notación:
-$$[v_0,\dots,\hat{v_i},\dots,v_n]:=[v_0,\dots,v_{i-1},v_{i+1},\dots,v_n]$$ 
+$$[v_0,\dots,\hat{v_i},\dots,v_n]:=[v_0,\dots,v_{i-1},v_{i+1},\dots,v_n]$$ \br
 Esta es una forma de notar el $(n-1)$-símplice obtenido al sacar $v_i$ del conjunto de vértices de $[v_0,\dots,v_n]$ y tomar el menor conjunto convexo que contiene a los vértices restantes. \br
 
 Diremos que $[v_0,\dots,\hat{v_i},\dots,v_n]$ es una cara de $[v_0,\dots,v_n]$.\br
@@ -101,7 +107,7 @@ Diremos que $[v_0,\dots,\hat{v_i},\dots,v_n]$ es una cara de $[v_0,\dots,v_n]$.\
 El borde de un $n$-símplice $\Delta^n$ es la unión de sus $n+1$ caras, lo notaremos $\partial\Delta^n$. \br
 \end{obs}
 
-Llamaremos aristas a los $2$-símplices con vértices $v_i, v_j\in\{v_0,\dots,v_n\}$. Estas también heredan el orden de $[v_0,\dots,v_n]$, y por lo tanto las notamos $[v_i,v_j]$ si $i<j$.
+Llamaremos aristas a los $2$-símplices con vértices $v_i, v_j\in\{v_0,\dots,v_n\}$. Estas también heredan el orden de $[v_0,\dots,v_n]$, y por lo tanto las notamos $[v_i,v_j]$ si $i<j$.\br
 \end{df}
 
 % Al definirlo así, implícitamente le estamos dando a los vértices de $[v_0,\dots,\hat{v_i},\dots,v_n]$ el orden heredado de restringir el orden de $[v_0,\dots,v_n]$ al nuevo conjunto de vértices. \br
@@ -200,7 +206,7 @@ En la imagen \ref{mal orientado} se muestra la orientación usual de las caras d
     \end{subfigure}
     \hspace{2cm}
     \begin{subfigure}[]{0.2\linewidth}
-        \includegraphics[width=\linewidth]{img mono/norient3.png}
+        \includegraphics[width=\linewidth]{img mono/norient4.png}
         \caption{$[v_1,v_2,v_3]$, $[v_0,v_2,v_3]$, $[v_0,v_1,v_3]$ y $[v_0,v_1,v_2]$}
     \end{subfigure}
     \caption{Orientación usual}
@@ -217,7 +223,7 @@ A continuación, en la imagen \ref{bien orientados} ilustramos cómo quedan orie
     \end{subfigure}
     \hspace{2cm}
     \begin{subfigure}[]{0.2\linewidth}
-        \includegraphics[width=\linewidth]{img mono/borient3.png}
+        \includegraphics[width=\linewidth]{img mono/borient4.png}
         \caption{$[v_1,v_2,v_3]$, $-[v_0,v_2,v_3]$, $[v_0,v_1,v_3]$ y $-[v_0,v_1,v_2]$}
     \end{subfigure}
     \caption{Orientación obtenida al intercalar los signos}
@@ -228,15 +234,49 @@ La idea entonces es que para obtener una orientación coherente y homogénea en 
 
 \begin{df}
 
-Procedemos ahora a definir el homomorfismo $\partial_n:\dx\to\ddx$. Para esto, fijamos su valor en los generadores de $\dx$, es decir, las funciones $\displaystyle\sigma_\alpha:\Delta^n\to X$. Notando $\Delta^n=[v_0,\dots,v_n]$, definimos $$\partial(\sigma_\alpha):=\sum\limits_{i=0}^{k}(-1)^i \sigma|_{[v_0,\dots,\hat{v_i},\dots v_n]}$$ 
+Procedemos ahora a definir el homomorfismo $\partial_n:\dx\to\ddx$. Para esto, fijamos su valor en los generadores de $\dx$, es decir, las funciones $\displaystyle{\sigma_\alpha:\Delta^n\to X}$. Notando $\Delta^n=[v_0,\dots,v_n]$, definimos $$\partial_n(\sigma_\alpha):=\sum\limits_{i=0}^{n}(-1)^i \sigma_\alpha|_{[v_0,\dots,\hat{v_i},\dots v_n]}$$ 
 
 \end{df}
 
-%la idea atrás del $(-1)^i$ es que cada cara nos quede orientada de la misma forma. 
+Definir el homomorfismo de esta manera lo dota de la siguiente propiedad, que será esencial para el desarrollo de la teoría:
 
 \begin{lema}
 La composición $\partial_{n-1}\circ\partial_n :\dx\to \Delta_{n-2}(X)$ es cero.
 \end{lema}
+
+\begin{dem}
+Veamos que vale para $\sigma:\Delta^n\to X$ perteneciente a los generadores de $\dx$. La composición queda de la siguiente manera: 
+
+$$\partial_{n-1}\circ\partial_n(\sigma)=\sum\limits_{i=0}^n(-1)^i\bigg(\sum\limits_{j<i}^n (-1)^j\sigma|_{[v_0,\dots,\hat{v_i},\dots,\hat{v_j},\dots,v_n]} + \sum\limits_{j>i}^n (-1)^{j-1}\sigma|_{[v_0,\dots,\hat{v_i},\dots,\hat{v_j},\dots,v_n]}\bigg)$$
+
+Es importante observar que en la última sumatoria obtenemos un $(-1)^{j-1}$ en vez de un $(-1)^j$. Esto se debe a que si $j>i$, entonces el vértice $v_j$ está en el lugar $j-1$ del $(n-1)$-símplice $[v_0,\dots,\hat{v_i},\dots,v_j,\dots, v_n]$. \br
+
+Usando que $\partial_n$ y $\partial_{n-1}$ son homomorfismos de grupos podemos distribuir el $(-1)^i$ y obtener que cada término de la sumatoria es de la forma $(-1)^i(-1)^j\sigma|_{[v_0,\dots,\hat{v_j},\dots,\hat{v_i},\dots,v_n]}$ si $i>j$, o $(-1)^i(-1)^{j-1}\sigma|_{[v_0,\dots,\hat{v_i},\dots,\hat{v_j},\dots,v_n]}$ si $i<j$. Dos términos se cancelan al intercambiar $i$ por $j$ y por lo tanto concluimos $\partial_{n-1}\circ\partial_n(\sigma)=0$. $\square$\br
+
+\end{dem}
+
+\begin{df}
+    
+Obtuvimos una familia de homomorfismos $\partial_n$ entre grupos abelianos libres $\dx$ que cumplen $\partial_{n-1}\circ\;\partial{n}\equiv 0$. Agregando un último elemento $\partial_0:\Delta_0(X)\to 0$ que definimos trivialmente, tenemos 
+
+$$\dots\rightarrow \Delta_{n+1}(X)\xrightarrow{\partial_{n+1}}\dx\xrightarrow{\partial_n}\ddx\rightarrow\dots\rightarrow\Delta_{1}(X)\xrightarrow{\partial_1}\Delta_{0}(X)\xrightarrow{\partial_0} 0$$\br
+
+Llamamos a una familia como esta un complejo de cadenas.
+
+\end{df}\br
+
+Otra forma de describir la propiedad $\partial_{n-1}\circ\;\partial{n}\equiv 0$ es decir que $\im(\partial_{n+1})\subset\Ker(\partial_n)$, con esto vamos a definir los grupos de homología del complejo de cadenas.\br
+
+\begin{df}
+
+Definimos el $n$-ésimo grupo de homología simplicial del complejo de cadenas como el cociente $$H_n^{\Delta}(X):=\Ker(\partial_n)/\im(\partial_{n+1})$$\br
+
+Llamamos ciclos a los elementos de $\Ker(\partial_n)$ y bordes a los de $\im(\partial_{n+1})$.
+
+\end{df}
+
+
+
 
 
 
