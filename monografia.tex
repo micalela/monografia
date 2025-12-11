@@ -374,7 +374,7 @@ Consideramos ahora $\partial_1$. Como $\sigma_1^i|_{[\hat{w_0},w_1]}\simeq\sigma
 
 Como $\Delta_3(X)=0$ se cumple que $im(\partial_3)=\Ker(\partial_3)=0$. Para $\partial_0$ se cumple $\im(\partial_0)=0$ y $\Ker(\partial_0)=\Delta_1(X)$ trivialmente.\br
 
-Con esto tenemos que 
+Con esto, continuando con el abuso de notación tenemos que 
 \begin{align*}
         &H^\Delta_2(X)=\Ker(\partial_2)/\im(\partial_3)\simeq\Z \\
         &H^\Delta_1(X)=\Ker(\partial_1)/\im(\partial_2)=\langle a,b,c \;|\; a+b-c=0\rangle\simeq \Z\oplus\Z \\
@@ -382,13 +382,19 @@ Con esto tenemos que
 \end{align*}
 
 y todos los demás $H^\Delta_n(X)$ se anulan.
-\end{ex}
 
+\comm{es posible que este ejemplo sea mucha notación}
+\end{ex}
+\comm{me gustaría poner algunos ejemplos más, me gustaría pegar un par de 2-símplices para mostrar cómo el borde queda solo la parte de afuera y todo lo de adentro se cancela}
 
 \begin{obs}
     Recordar que llamamos bordes a los elementos de $\im(\partial_n)$ y ciclos a los de $\Ker(\partial_n)$. La idea detrás de estos nombres puede comenzar a aclararse observando el caso de $H^\Delta_1(X)$ para un espacio $X$ cualquiera.\br
     
-    Si notamos $\Delta^1=[v_0,v_1]$ y tomamos $\sigma_i:\Delta^1\to X$ provenientes de la estructura de $\Delta$-complejo de $X$ entonces en esta dimensión, un elemento de $\Ker(\partial_1)$ es una suma formal $\sum k_i\sigma_i$ con $\sum k_i\sigma_i|_{[\hat{v_0},v_1]} - \sum k_i\sigma_i|_{[v_0,\hat{v_1}]}=0$. Un elemento de esta manera debe cumplir que cada vértice tiene el mismo número de aristas entrantes y salientes. Al ver $X$ como cociente de símplices, esto se traduce en la noción de que las imágenes de las $\sigma_i$ forman curvas cerradas.
+    Si notamos $\Delta^1=[v_0,v_1]$ y tomamos $\sigma_i:\Delta^1\to X$ provenientes de la estructura de $\Delta$-complejo de $X$ entonces un elemento de $\Ker(\partial_1)$ es una suma formal $\sum k_i\sigma_i$ con $\sum k_i\sigma_i|_{[\hat{v_0},v_1]} - \sum k_i\sigma_i|_{[v_0,\hat{v_1}]}=0$. Un elemento de esta manera debe cumplir que cada vértice tiene el mismo número de aristas entrantes y salientes. Al ver $X$ como cociente de símplices, esto se traduce en la noción de que las imágenes de las $\sigma_i$ forman curvas cerradas.\br
+
+    Un elemento de $\im(\partial_2)$ es también un elemento de $Ker(\partial_1)$, y por lo tanto su imagen pasada por el cociente también es unión de curvas cerradas. Sin embargo, a diferencia de los elementos de $\Ker(\partial_1)$, estas curvas cerradas necesariamente son el borde de algún complejo simplicial de dimensión 2, por ejemplo de un disco.\br
+
+    Lo que logra $H_1^\Delta(X)$ es distinguir las curvas cerradas contractibles de las no contractibles en $X$. Es decir, distingue las curvas cerradas que son borde de algún complejo de dimensión 2 de las que bordean un "agujero" en $X$. Dicho usando la nomeclatura de ciclos y bordes, los elementos relevantes para $H_1^\Delta$ son los ciclos que no son borde de ningun $2$-complejo.\br
 
 
 \end{obs}

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1765447303.69655 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1765447323.84662 0
+["pdflatex"] 1765492991.66967 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1765493011.495 0
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1765008476 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/cumpc/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1764906329 13321486 7346ed293b4ec23729dba7d80dcb3274 ""
   "O:/programas/miktex/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -165,9 +165,9 @@
   "img mono/simplices estandar.png" 1764905831 5745998 8c7d7d5255e906a7825478c0fad6624c ""
   "img mono/simplices.png" 1764905831 5099446 d7bcaac080119f1842083b3e27b93ecb ""
   "img mono/toro.png" 1765428829 6843234 8f473f0d5b5ef72fe38fa3eaa5d71398 ""
-  "monografia.aux" 1765447323 4314 6cbe0cc68965affbf2370d5a148cecdb "pdflatex"
-  "monografia.tex" 1765447302 24471 2b674202d288beb55e83618af5275914 ""
-  "o:/monografia/monografia.tex" 1765447302 24471 2b674202d288beb55e83618af5275914 ""
+  "monografia.aux" 1765493011 4764 a60e9d64e4213c0c14623c84987f5355 "pdflatex"
+  "monografia.tex" 1765492971 25490 fb806fafe4b370986c52b6cc73323d43 ""
+  "o:/monografia/monografia.tex" 1765492971 25490 fb806fafe4b370986c52b6cc73323d43 ""
   (generated)
   "monografia.aux"
   "monografia.log"
