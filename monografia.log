@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  8 DEC 2025 06:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  11 DEC 2025 01:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -524,7 +524,7 @@ Cap\'itulo 2
 <img mono/simplices.png, id=35, 3657.665pt x 1268.74pt>
 File: img mono/simplices.png Graphic file (type png)
 <use img mono/simplices.png>
-Package pdftex.def Info: img mono/simplices.png  used on input line 120.
+Package pdftex.def Info: img mono/simplices.png  used on input line 122.
 (pdftex.def)             Requested size: 209.12775pt x 72.53963pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -533,108 +533,127 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <img mono/simplices estandar.png, id=40, 3501.08pt x 1336.995pt>
 File: img mono/simplices estandar.png Graphic file (type png)
 <use img mono/simplices estandar.png>
-Package pdftex.def Info: img mono/simplices estandar.png  used on input line 137.
+Package pdftex.def Info: img mono/simplices estandar.png  used on input line 139.
 (pdftex.def)             Requested size: 209.12775pt x 79.84901pt.
  [6 <./img mono/simplices.png> <./img mono/simplices estandar.png>]
 <img mono/cociente.png, id=45, 3625.545pt x 1951.29pt>
 File: img mono/cociente.png Graphic file (type png)
 <use img mono/cociente.png>
-Package pdftex.def Info: img mono/cociente.png  used on input line 176.
+Package pdftex.def Info: img mono/cociente.png  used on input line 178.
 (pdftex.def)             Requested size: 167.29964pt x 90.03732pt.
 <img mono/cociente2.png, id=46, 3625.545pt x 1951.29pt>
 File: img mono/cociente2.png Graphic file (type png)
 <use img mono/cociente2.png>
-Package pdftex.def Info: img mono/cociente2.png  used on input line 179.
+Package pdftex.def Info: img mono/cociente2.png  used on input line 181.
 (pdftex.def)             Requested size: 167.29964pt x 90.03732pt.
  [7 <./img mono/cociente.png> <./img mono/cociente2.png>]
 <img mono/norient2.png, id=53, 1472.50125pt x 1641.13126pt>
 File: img mono/norient2.png Graphic file (type png)
 <use img mono/norient2.png>
-Package pdftex.def Info: img mono/norient2.png  used on input line 204.
+Package pdftex.def Info: img mono/norient2.png  used on input line 206.
 (pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
 <img mono/norient4.png, id=54, 1472.50125pt x 1641.13126pt>
 File: img mono/norient4.png Graphic file (type png)
 <use img mono/norient4.png>
-Package pdftex.def Info: img mono/norient4.png  used on input line 209.
+Package pdftex.def Info: img mono/norient4.png  used on input line 211.
 (pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
 []\OT1/cmr/m/sc/10 (b) |$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$ y
  []
 
 <img mono/borient2.png, id=55, 1472.50125pt x 1641.13126pt>
 File: img mono/borient2.png Graphic file (type png)
 <use img mono/borient2.png>
-Package pdftex.def Info: img mono/borient2.png  used on input line 221.
+Package pdftex.def Info: img mono/borient2.png  used on input line 223.
 (pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--222
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 []\OT1/cmr/m/sc/10 (a) |$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]\OT1/cmr/m/n/10 ]$,
  []
 
 <img mono/borient4.png, id=56, 1472.50125pt x 1641.13126pt>
 File: img mono/borient4.png Graphic file (type png)
 <use img mono/borient4.png>
-Package pdftex.def Info: img mono/borient4.png  used on input line 226.
+Package pdftex.def Info: img mono/borient4.png  used on input line 228.
 (pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--227
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
 []\OT1/cmr/m/sc/10 (b) |$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--227
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
 \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--227
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$ y
  []
 
-[8 <./img mono/norient2.png> <./img mono/norient4.png> <./img mono/borient2.png> <./img mono/borient4.png>]
-Overfull \hbox (14.16719pt too wide) in paragraph at lines 237--237
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (14.16719pt too wide) in paragraph at lines 239--239
 \OT1/cmr/m/n/10.95 Para esto, fi-jamos su valor en los gen-er-adores de $^^A[](\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$, es de-cir, las fun-ciones $[]$.
  []
 
-[9] [10]
+[8 <./img mono/norient2.png> <./img mono/norient4.png>] [9 <./img mono/borient2.png> <./img mono/borient4.png>]
+<img mono/s1.png, id=67, 2613.765pt x 2328.7pt>
+File: img mono/s1.png Graphic file (type png)
+<use img mono/s1.png>
+Package pdftex.def Info: img mono/s1.png  used on input line 305.
+(pdftex.def)             Requested size: 125.47792pt x 111.78699pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10]
+<img mono/toro.png, id=71, 2673.99pt x 2276.505pt>
+File: img mono/toro.png Graphic file (type png)
+<use img mono/toro.png>
+Package pdftex.def Info: img mono/toro.png  used on input line 331.
+(pdftex.def)             Requested size: 125.47792pt x 106.81511pt.
+ [11 <./img mono/s1.png> <./img mono/toro.png>] [12]
 Cap\'itulo 3
-[11
+[13
 
 
-] [12
+] [14
 
 
 ]
 Cap\'itulo 4
-[13] (monografia.aux)
+[15] (monografia.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17032 strings out of 467871
- 333340 string characters out of 5430401
- 811350 words of memory out of 5000000
- 45460 multiletter control sequences out of 15000+600000
+ 17056 strings out of 467871
+ 333854 string characters out of 5430401
+ 812498 words of memory out of 5000000
+ 45484 multiletter control sequences out of 15000+600000
  638931 words of font info for 83 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 117i,11n,121p,591b,897s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,11n,121p,778b,897s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msam10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on monografia.pdf (15 pages, 32223964 bytes).
+Output written on monografia.pdf (17 pages, 44690758 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
+ 158 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

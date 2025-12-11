@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1765186453.49888 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1765186468.58569 0
+["pdflatex"] 1765429073.3206 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1765429092.9091 0
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1765008476 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/cumpc/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1764906329 13321486 7346ed293b4ec23729dba7d80dcb3274 ""
   "O:/programas/miktex/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -152,18 +152,20 @@
   "O:/programas/miktex/tex/latex/tools/calc.sty" 1761901070 10374 2ffd4f27c7f90b8a300608069537743c ""
   "O:/programas/miktex/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "O:/programas/miktex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "cmat-monografia.cls" 1764905831 3051 2d4c3bd389d707f779416f56c6240530 ""
+  "cmat-monografia.cls" 1765407193 3051 2d4c3bd389d707f779416f56c6240530 ""
   "img mono/borient2.png" 1764988578 2520945 987c37afc3e99c5d98d92c705e464773 ""
   "img mono/borient4.png" 1765186385 2922184 24a904313ef73c6e7f7be3b1a8a1e0f3 ""
   "img mono/cociente.png" 1764966639 6307920 787d85e237ace9d34fbd3780d78f70fc ""
   "img mono/cociente2.png" 1764969792 7576966 869bb549b43c5ca658e1da131022a392 ""
   "img mono/norient2.png" 1764988495 2546063 015b3dec0d2104a91c1df56b24974ca1 ""
   "img mono/norient4.png" 1765186215 2639334 f899e18d88a85589f70313e657ef9247 ""
+  "img mono/s1.png" 1765428810 6836525 b9fdde9172463f08bc55ec09c5a98532 ""
   "img mono/simplices estandar.png" 1764905831 5745998 8c7d7d5255e906a7825478c0fad6624c ""
   "img mono/simplices.png" 1764905831 5099446 d7bcaac080119f1842083b3e27b93ecb ""
-  "monografia.aux" 1765186468 2919 2e69a7ca8d73a0adfcd60de2273b92f6 "pdflatex"
-  "monografia.tex" 1765186452 16716 6ccaac27f7d5ffa57301a8f2a3bd94ae ""
-  "o:/monografia/monografia.tex" 1765186452 16716 6ccaac27f7d5ffa57301a8f2a3bd94ae ""
+  "img mono/toro.png" 1765428829 6843234 8f473f0d5b5ef72fe38fa3eaa5d71398 ""
+  "monografia.aux" 1765429092 4143 329ab54a77f88a041e05e16ade8985c0 "pdflatex"
+  "monografia.tex" 1765429052 21996 595b3558d2f32bd2bf44743c8be558af ""
+  "o:/monografia/monografia.tex" 1765429052 21996 595b3558d2f32bd2bf44743c8be558af ""
   (generated)
   "monografia.aux"
   "monografia.log"

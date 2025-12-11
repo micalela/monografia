@@ -86,6 +86,8 @@ Después veremos cositas de límites inversos y atractores de sistemas dinámico
 
 En general, notamos $S^n := \{x\in\R^n : \|x\|=1\}$, y decimos que una $n-$esfera es un espacio topológico $S$ tal que existe un homeomorfismo $h:S\to S^n$.\br
 
+\comm{agregar: grupo libre, notación}
+
 \chapter{Homología y teorema de Jordan}
 
 En esta sección introduciremos al lector a la teoría de homología singular. El objetivo será probar que una $(n-1)$-esfera separa $\R^n$ en dos componentes conexas, y que estas componentes conexas tienen la misma homología de un punto. \br
@@ -166,7 +168,7 @@ Las condiciones $(1)$ y $(3)$ nos dicen que las funciones $\sigma_\alpha$ restri
 
 En el punto $(2)$, la equivalencia es en el siguiente sentido: \br
 
-Dada $\sigma_\alpha:\Delta^{n_\alpha}\to X$, notamos $\hat{\Delta}^{n_\alpha}$ a una cara de $\Delta^{n_\alpha}$. Consideramos $h:\Delta^{n_\alpha -1}\to\hat{\Delta}^{n_\alpha}$ el homeomorfismo canónico que manda el $\{n_\alpha -1\}$-símplice estándar a $\hat{\Delta}^{n_\alpha}$. Lo que nos dice este punto es que existe una función $\sigma_\beta:\Delta^{n_\alpha -1}\to X$ en la familia que cumple $\sigma_\beta=\sigma_\alpha\circ h$. Decimos entonces que $\sigma_\alpha |_{\hat{\Delta}^{n_\alpha}}$ es equivalente a $\sigma_\beta$\br
+Dada $\sigma_\alpha:\Delta^{n_\alpha}\to X$, notamos $\hat{\Delta}^{n_\alpha}$ a una cara de $\Delta^{n_\alpha}$. Consideramos $h:\Delta^{n_\alpha -1}\to\hat{\Delta}^{n_\alpha}$ el homeomorfismo canónico que manda el $\{n_\alpha -1\}$-símplice estándar a $\hat{\Delta}^{n_\alpha}$. Lo que nos dice este punto es que existe una función $\sigma_\beta:\Delta^{n_\alpha -1}\to X$ en la familia que cumple $\sigma_\beta=\sigma_\alpha\circ h$. Decimos entonces que $\sigma_\alpha |_{\hat{\Delta}^{n_\alpha}}$ es equivalente a $\sigma_\beta$ y lo notaremos $\sigma_\alpha |_{\hat{\Delta}^{n_\alpha}}\simeq\sigma_\beta$.\br
 
 Si por cada elemento $\sigma_\alpha:\Delta^{n_\alpha}\to X$ proveniente de la estructura de $\Delta$-complejo de $X$ consideramos un $n_\alpha$-símplice $\Delta^{n_\alpha}_\alpha$, entonces $X$ es el espacio obtenido al tomar el cociente de $x\sim h(x)$ para todas las $h:\Delta^{n_\alpha -1}\to \hat{\Delta}^{n_\alpha}_\alpha$ definidas como en el párrafo anterior. Algunos ejemplos se muestran en la imagen \ref{cocientes}.\br
 
@@ -247,7 +249,7 @@ La composición $\partial_{n-1}\circ\partial_n :\dx\to \Delta_{n-2}(X)$ es cero.
 \begin{dem}
 Veamos que vale para $\sigma:\Delta^n\to X$ perteneciente a los generadores de $\dx$. La composición queda de la siguiente manera: 
 
-$$\partial_{n-1}\circ\partial_n(\sigma)=\sum\limits_{i=0}^n(-1)^i\bigg(\sum\limits_{j<i}^n (-1)^j\sigma|_{[v_0,\dots,\hat{v_i},\dots,\hat{v_j},\dots,v_n]} + \sum\limits_{j>i}^n (-1)^{j-1}\sigma|_{[v_0,\dots,\hat{v_i},\dots,\hat{v_j},\dots,v_n]}\bigg)$$
+$$\partial_{n-1}\circ\partial_n(\sigma)=\sum\limits_{i=0}^n(-1)^i\bigg(\sum\limits_{j<i}^n (-1)^j\sigma|_{[v_0,\dots,\hat{v_j},\dots,\hat{v_i},\dots,v_n]} + \sum\limits_{j>i}^n (-1)^{j-1}\sigma|_{[v_0,\dots,\hat{v_i},\dots,\hat{v_j},\dots,v_n]}\bigg)$$
 
 Es importante observar que en la última sumatoria obtenemos un $(-1)^{j-1}$ en vez de un $(-1)^j$. Esto se debe a que si $j>i$, entonces el vértice $v_j$ está en el lugar $j-1$ del $(n-1)$-símplice $[v_0,\dots,\hat{v_i},\dots,v_j,\dots, v_n]$. \br
 
@@ -257,7 +259,7 @@ Usando que $\partial_n$ y $\partial_{n-1}$ son homomorfismos de grupos podemos d
 
 \begin{df}
     
-Obtuvimos una familia de homomorfismos $\partial_n$ entre grupos abelianos libres $\dx$ que cumplen $\partial_{n-1}\circ\;\partial{n}\equiv 0$. Agregando un último elemento $\partial_0:\Delta_0(X)\to 0$ que definimos trivialmente, tenemos 
+Obtuvimos una familia de homomorfismos $\partial_n$ entre grupos abelianos libres $\dx$ que cumplen $\partial_{n-1}\circ\;\partial_n\equiv 0$. Agregando un último elemento $\partial_0:\Delta_0(X)\to 0$ que definimos trivialmente, tenemos 
 
 $$\dots\rightarrow \Delta_{n+1}(X)\xrightarrow{\partial_{n+1}}\dx\xrightarrow{\partial_n}\ddx\rightarrow\dots\rightarrow\Delta_{1}(X)\xrightarrow{\partial_1}\Delta_{0}(X)\xrightarrow{\partial_0} 0$$\br
 
@@ -265,18 +267,104 @@ Llamamos a una familia como esta un complejo de cadenas.
 
 \end{df}\br
 
-Otra forma de describir la propiedad $\partial_{n-1}\circ\;\partial{n}\equiv 0$ es decir que $\im(\partial_{n+1})\subset\Ker(\partial_n)$, con esto vamos a definir los grupos de homología del complejo de cadenas.\br
+Otra forma de describir la propiedad $\partial_{n-1}\circ\;\partial_n\equiv 0$ es decir que $\im(\partial_{n+1})\subset\Ker(\partial_n)$, con esto vamos a definir los grupos de homología del complejo de cadenas.\br
 
 \begin{df}
 
 Definimos el $n$-ésimo grupo de homología simplicial del complejo de cadenas como el cociente $$H_n^{\Delta}(X):=\Ker(\partial_n)/\im(\partial_{n+1})$$\br
 
-Llamamos ciclos a los elementos de $\Ker(\partial_n)$ y bordes a los de $\im(\partial_{n+1})$.
+Llamamos ciclos a los elementos de $\Ker(\partial_n)$ y bordes a los de $\im(\partial_{n+1})$. Los elementos de $H_n^{\Delta}(X)$ serán nuestras clases de homología simplicial.\br 
+
+Diremos que dos ciclos que pertenecen a la misma clase de homología simplicial son ciclos homólogos. Dos ciclos $\sum_{i=0}^N k_i\sigma_i$ y $\sum_{i=0}^M k'_i\sigma'_i$ de esta manera cumplirán que su diferencia $\sum_{i=0}^N k_i\sigma_i - \sum_{i=0}^M k'_i\sigma'_i$ es un borde.\br
 
 \end{df}
 
+\comm{En algún momento debería hacer una observación sobre por qué uso $\Delta$-complejos en vez de complejos simpliciales, que son los que dan el nombre a la homología simplicial. La verdad es que lo hago así porque hatcher lo hace así, y él dice que lo hace así porque los $\Delta$-complejos son más generales y más fáciles de trabajar que los simpliciales, sin embargo la verdad es que todo esto lo podría haber hecho todo con complejos simpliciales y no hubiera cambiado demasiado porque solo lo uso para introducir las intuiciones. O sea, MI razón para hacerlo así es que hatcher lo hace así pero bueno debería decir algo que no sea eso.}
 
+A continuación nos enfocaremos en algunos ejemplos.
 
+\begin{ex}
+    Comenzemos con el ejemplo más sencillo. Tomamos $X = \{p\}$ un punto. Una estructura de $\Delta$-complejo para $X$ está dada por una única función $\{\sigma_0:\Delta^0\to X\}$. \br
+    
+    Los grupos $\Delta_n(X)$ son $0$ salvo para $n=0$, en ese caso se tiene $\Delta_0(X)=\langle\sigma_0\rangle\simeq\Z$. Por esta razón, todos los homomorfismos $\partial_n:\dx\to\ddx$ son $0$, incluyendo $\partial_0:\Delta_0(X)\to 0$, que es $0$ por definición.\br
+
+    Por lo tanto, en este caso tenemos $\im(\partial_n)=0$ para todo $n$, $\Ker(\partial_n)=0$ para todo $n\neq 0$, y $Ker(\partial_0)=\Delta_0(X)\simeq\Z$.\br
+
+    Entonces $$H^{\Delta}_n(X)\simeq
+    \begin{cases}
+    0\text{ si } n\neq 0 \\
+    \Z\text{ si } n=0
+    \end{cases}$$
+\end{ex}\br
+
+\begin{ex}
+Consideremos ahora $X=S^1$. Para darle una estructura de $\Delta$-complejo, vemos todo $S^1$ como una arista $e$ con un único vértice $v$ como se muestra en la imagen \ref{s1}. Nuestra estructura de $\Delta$-complejo para $X$ está dada por dos funciones $\sigma_0:\Delta^0\to X$ y $\sigma_1:\Delta^1\to X$. Si notamos $\Delta^1=[v_0,v_1]$ entonces $\im(\sigma_0)=\{v\}$, $\im(\sigma_1)=e$ y $\sigma_1|_{[v_0]}\simeq\sigma_1|_{[v_1]}\simeq\sigma_0$.\br
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.3\linewidth]{img mono/s1.png}
+    \caption{$S^1$}
+    \label{s1}
+\end{figure}
+
+Los grupos $\dx$ son $0$ para todo $n\neq 0,1$. Para $n=1$ se tiene $\Delta_1(X)=\langle\sigma_1\rangle\simeq\Z$ y para $n=0$ se tiene $\Delta_0(X)=\langle\sigma_0\rangle\simeq\Z$.\br
+
+Como $\sigma_1|_{[v_0]}\simeq\sigma_1|_{[v_1]}$, entonces $\partial_1(\sigma_1)=\sigma_1|_{[v_1]}-\sigma_1|_{[v_0]}=0$ y por lo tanto $\Ker(\sigma_1)=\Delta_1(X)$. Además sabemos que $\Delta_2(X)=0$ y por lo tanto $\im(\partial_2)=0$. Con esto obtenemos que $H^\Delta_1(X)\simeq\Z$.\br
+
+En el caso de $H_0^\Delta(X)$, observamos que $\Ker(\partial_0)=\Delta_0(X)$ y $\im(\partial_1)=0$ por la misma razón que antes. Con esto obtenemos que $H^\Delta_0(X)\simeq\Z$.\br
+
+Como $\dx=0$ para todo $n\neq 0,1$, concluimos que 
+
+$$ H^{\Delta}_n(X)\simeq
+    \begin{cases}
+    0\text{ si } n\neq 0,1 \\
+    \Z\text{ si } n\in\{0,1\}
+    \end{cases} $$
+\end{ex}
+
+\begin{ex}
+
+Sea $X=\T^2$, sabemos que podemos expresarlo como cociente de $[0,1]^2$. Para darle una estructura de $\Delta$-complejo, separamos $[0,1]$ en dos triángulos como se ve en la imagen \ref{toro}, que llamamos $U$ y $L$. Los bordes de estos triángulos, después de pasar por el cociente, serán nuestras tres aristas $a,b$ y $c$, que comparten un único vértice $v$. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.3\linewidth]{img mono/toro.png}
+    \caption{$\T^2$}
+    \label{toro}
+\end{figure}
+
+Una estructura de $\Delta$-complejo para $X$ está dada por $\{\sigma_2^1,\sigma_2^2,\sigma_1^1,\sigma_1^2,\sigma_1^3,\sigma_0\}$, con 
+
+$$\begin{cases}
+    \sigma_2^1:\Delta^2\to U\\
+    \sigma_2^2:\Delta^2\to L\\
+    \sigma_1^1:\Delta^1\to a\\
+\end{cases}\hspace{1cm}
+\begin{cases}
+    \sigma_1^2:\Delta^1\to b\\
+    \sigma_1^3:\Delta^1\to c\\
+    \sigma_0:\Delta^0\to \{v\}\\
+\end{cases}$$
+
+Si notamos $\Delta^2=[v_0,v_1,v_2]$, $\Delta^1=[w_0,w_1]$, entonces se cumplen las relaciones 
+$$\begin{cases}
+    \sigma_2^1|_{[\hat{v_0},v_1,v_2]}\simeq\sigma_1^2\\
+    \sigma_2^1|_{[v_0,\hat{v_1},v_2]}\simeq\sigma_1^3\\
+    \sigma_2^1|_{[v_0,v_1,\hat{v_2}]}\simeq\sigma_1^1
+\end{cases}\hspace{0.5cm}
+\begin{cases}
+    \sigma_2^2|_{[\hat{v_0},v_1,v_2]}\simeq\sigma_1^1\\
+    \sigma_2^2|_{[v_0,\hat{v_1},v_2]}\simeq\sigma_1^3\\
+    \sigma_2^2|_{[v_0,v_1,\hat{v_2}]}\simeq\sigma_1^2
+\end{cases}\hspace{0.5cm}
+\begin{cases}
+    \sigma_1^i|_{[\hat{w_0},w_1]}\simeq\sigma_0 \\
+    \sigma_1^i|_{[w_0,\hat{w_1}]}\simeq\sigma_0 
+\end{cases} \fall i\in\{1,2,3\}$$
+
+Observar que estas relaciones están en parte determinadas por la orientación de los símplices, esto es parte de la rigidez que impone la teoría de los $\Delta$-complejos.
+
+\end{ex}
 
 
 
