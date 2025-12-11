@@ -184,7 +184,7 @@ Si por cada elemento $\sigma_\alpha:\Delta^{n_\alpha}\to X$ proveniente de la es
     \label{cocientes}
 \end{figure}
 
-\comm{esto no está escrito explicitamente en el hatcher  pero creo que es así, igual quiero mejorar cómo está redactado pero no quiero abusar de los subíndices, porque sería una $h$ por cada cara de cada símplice}\br
+\comm{me gustaría mejorar cómo está redactado pero no quiero abusar de los subíndices, porque sería una $h$ por cada cara de cada símplice}\br
 
 %\begin{obs}
 %Cualquier espacio con una estructura de $\Delta$-complejo va a ser Hausdorff, 
@@ -232,6 +232,8 @@ A continuación, en la imagen \ref{bien orientados} ilustramos cómo quedan orie
     \label{bien orientados}
 \end{figure}
 
+\comm{sé que el formato de las imágenes está muy feo acá, en el futuro acomodaré todo eso cuando agregue las imágenes finales}
+
 La idea entonces es que para obtener una orientación coherente y homogénea en las caras de nuestro símplice, vamos a intercalar la orientación usual de las caras con la orientación revertida. \br
 
 \begin{df}
@@ -259,7 +261,7 @@ Usando que $\partial_n$ y $\partial_{n-1}$ son homomorfismos de grupos podemos d
 
 \begin{df}
     
-Obtuvimos una familia de homomorfismos $\partial_n$ entre grupos abelianos libres $\dx$ que cumplen $\partial_{n-1}\circ\;\partial_n\equiv 0$. Agregando un último elemento $\partial_0:\Delta_0(X)\to 0$ que definimos trivialmente, tenemos 
+Obtuvimos una familia de homomorfismos $\partial_n$ entre grupos abelianos libres $\dx$ que cumplen $\partial_{n-1}\circ\;\partial_n= 0$. Agregando un último elemento $\partial_0:\Delta_0(X)\to 0$ que definimos trivialmente, tenemos 
 
 $$\dots\rightarrow \Delta_{n+1}(X)\xrightarrow{\partial_{n+1}}\dx\xrightarrow{\partial_n}\ddx\rightarrow\dots\rightarrow\Delta_{1}(X)\xrightarrow{\partial_1}\Delta_{0}(X)\xrightarrow{\partial_0} 0$$\br
 
@@ -267,7 +269,7 @@ Llamamos a una familia como esta un complejo de cadenas.
 
 \end{df}\br
 
-Otra forma de describir la propiedad $\partial_{n-1}\circ\;\partial_n\equiv 0$ es decir que $\im(\partial_{n+1})\subset\Ker(\partial_n)$, con esto vamos a definir los grupos de homología del complejo de cadenas.\br
+Otra forma de describir la propiedad $\partial_{n-1}\circ\;\partial_n=0$ es decir que $\im(\partial_{n+1})\subset\Ker(\partial_n)$, con esto vamos a definir los grupos de homología del complejo de cadenas.\br
 
 \begin{df}
 
@@ -279,7 +281,7 @@ Diremos que dos ciclos que pertenecen a la misma clase de homología simplicial 
 
 \end{df}
 
-\comm{En algún momento debería hacer una observación sobre por qué uso $\Delta$-complejos en vez de complejos simpliciales, que son los que dan el nombre a la homología simplicial. La verdad es que lo hago así porque hatcher lo hace así, y él dice que lo hace así porque los $\Delta$-complejos son más generales y más fáciles de trabajar que los simpliciales, sin embargo la verdad es que todo esto lo podría haber hecho todo con complejos simpliciales y no hubiera cambiado demasiado porque solo lo uso para introducir las intuiciones. O sea, MI razón para hacerlo así es que hatcher lo hace así pero bueno debería decir algo que no sea eso.}
+\comm{En algún momento debería hacer una observación sobre por qué uso $\Delta$-complejos en vez de complejos simpliciales, que son los que dan el nombre a la homología simplicial. La verdad es que lo hago así porque hatcher lo hace así, y él dice que lo hace así porque los $\Delta$-complejos son más generales y más fáciles de trabajar que los simpliciales, sin embargo la verdad es que todo esto lo podría haber hecho con complejos simpliciales y no hubiera cambiado demasiado porque solo lo uso para introducir las intuiciones. O sea, \textit{mi} razón para hacerlo así es que hatcher lo hace así pero bueno debería decir algo que no sea eso.}
 
 A continuación nos enfocaremos en algunos ejemplos.
 
@@ -346,7 +348,7 @@ $$\begin{cases}
     \sigma_0:\Delta^0\to \{v\}\\
 \end{cases}$$
 
-Si notamos $\Delta^2=[v_0,v_1,v_2]$, $\Delta^1=[w_0,w_1]$, entonces se cumplen las relaciones 
+Si notamos $\Delta^2=[v_0,v_1,v_2]$, $\Delta^1=[w_0,w_1]$, entonces se cumplen las relaciones \br
 $$\begin{cases}
     \sigma_2^1|_{[\hat{v_0},v_1,v_2]}\simeq\sigma_1^2\\
     \sigma_2^1|_{[v_0,\hat{v_1},v_2]}\simeq\sigma_1^3\\
@@ -360,11 +362,36 @@ $$\begin{cases}
 \begin{cases}
     \sigma_1^i|_{[\hat{w_0},w_1]}\simeq\sigma_0 \\
     \sigma_1^i|_{[w_0,\hat{w_1}]}\simeq\sigma_0 
-\end{cases} \fall i\in\{1,2,3\}$$
+\end{cases} \fall i\in\{1,2,3\}$$\br
 
-Observar que estas relaciones están en parte determinadas por la orientación de los símplices, esto es parte de la rigidez que impone la teoría de los $\Delta$-complejos.
+Observar que estas relaciones están en parte determinadas por la orientación de los símplices, esto es parte de la rigidez que impone la teoría de los $\Delta$-complejos.\br
 
+Tenemos entonces que $\dx=0$ para todo $n\neq 0,1,2$, $\Delta_2(X)=\langle\sigma_2^1, \sigma_2^2 \rangle\simeq\Z\oplus\Z$, $\Delta_1(X)=\langle\sigma_1^1,\sigma_1^2,\sigma_1^3\rangle\simeq\Z\oplus\Z\oplus\Z$, $\Delta_0(X)=\langle\sigma_0\rangle\simeq\Z$.\br
+
+Estudiemos primero el caso de $\partial_2$. Se tiene $\partial_2(\sigma_2^1)=\sigma_1^2-\sigma_1^3+\sigma_1^1$. Haciendo un abuso de notación, podemos escribirlo como $\partial U=b-c+a$. De la misma manera, tenemos $\partial_2(\sigma_2^2)=\sigma_1^1-\sigma_1^3+\sigma_1^2$, que podemos escribir como $\partial L=a-c+b$. Por lo tanto, continuando con esta notación, la imagen de $\partial_2$ es el grupo abeliano libre generado por $a+b-c$. Por esto mismo también obtenemos que $\Ker(\partial_2)$ es el grupo abeliano libre generado por $U-L$, que es isomorfo a $\Z$.\br
+
+Consideramos ahora $\partial_1$. Como $\sigma_1^i|_{[\hat{w_0},w_1]}\simeq\sigma_0\simeq\sigma_1^i|_{[w_0,\hat{w_1}]}$ para $i\in\{1,2,3\}$, tenemos que $\im(\partial_1)=0$ y $\Ker(\partial_1)=\Delta_1(X)$.\br
+
+Como $\Delta_3(X)=0$ se cumple que $im(\partial_3)=\Ker(\partial_3)=0$. Para $\partial_0$ se cumple $\im(\partial_0)=0$ y $\Ker(\partial_0)=\Delta_1(X)$ trivialmente.\br
+
+Con esto tenemos que 
+\begin{align*}
+        &H^\Delta_2(X)=\Ker(\partial_2)/\im(\partial_3)\simeq\Z \\
+        &H^\Delta_1(X)=\Ker(\partial_1)/\im(\partial_2)=\langle a,b,c \;|\; a+b-c=0\rangle\simeq \Z\oplus\Z \\
+        &H^\Delta_0(X)=\Ker(\partial_0)/\im(\partial_1)\simeq\Z
+\end{align*}
+
+y todos los demás $H^\Delta_n(X)$ se anulan.
 \end{ex}
+
+
+\begin{obs}
+    Recordar que llamamos bordes a los elementos de $\im(\partial_n)$ y ciclos a los de $\Ker(\partial_n)$. La idea detrás de estos nombres puede comenzar a aclararse observando el caso de $H^\Delta_1(X)$ para un espacio $X$ cualquiera.\br
+    
+    Si notamos $\Delta^1=[v_0,v_1]$ y tomamos $\sigma_i:\Delta^1\to X$ provenientes de la estructura de $\Delta$-complejo de $X$ entonces en esta dimensión, un elemento de $\Ker(\partial_1)$ es una suma formal $\sum k_i\sigma_i$ con $\sum k_i\sigma_i|_{[\hat{v_0},v_1]} - \sum k_i\sigma_i|_{[v_0,\hat{v_1}]}=0$. Un elemento de esta manera debe cumplir que cada vértice tiene el mismo número de aristas entrantes y salientes. Al ver $X$ como cociente de símplices, esto se traduce en la noción de que las imágenes de las $\sigma_i$ forman curvas cerradas.
+
+
+\end{obs}
 
 
 

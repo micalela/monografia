@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  11 DEC 2025 01:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  11 DEC 2025 07:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -602,58 +602,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--229
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$ y
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (14.16719pt too wide) in paragraph at lines 239--239
+[8 <./img mono/norient2.png> <./img mono/norient4.png> <./img mono/borient2.png> <./img mono/borient4.png>]
+Overfull \hbox (14.16719pt too wide) in paragraph at lines 241--241
 \OT1/cmr/m/n/10.95 Para esto, fi-jamos su valor en los gen-er-adores de $^^A[](\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$, es de-cir, las fun-ciones $[]$.
  []
 
-[8 <./img mono/norient2.png> <./img mono/norient4.png>] [9 <./img mono/borient2.png> <./img mono/borient4.png>]
+[9]
 <img mono/s1.png, id=67, 2613.765pt x 2328.7pt>
 File: img mono/s1.png Graphic file (type png)
 <use img mono/s1.png>
-Package pdftex.def Info: img mono/s1.png  used on input line 305.
+Package pdftex.def Info: img mono/s1.png  used on input line 307.
 (pdftex.def)             Requested size: 125.47792pt x 111.78699pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [10]
-<img mono/toro.png, id=71, 2673.99pt x 2276.505pt>
+<img mono/toro.png, id=72, 2673.99pt x 2276.505pt>
 File: img mono/toro.png Graphic file (type png)
 <use img mono/toro.png>
-Package pdftex.def Info: img mono/toro.png  used on input line 331.
+Package pdftex.def Info: img mono/toro.png  used on input line 333.
 (pdftex.def)             Requested size: 125.47792pt x 106.81511pt.
- [11 <./img mono/s1.png> <./img mono/toro.png>] [12]
+ [11 <./img mono/s1.png> <./img mono/toro.png>] [12] [13] [14
+
+
+]
 Cap\'itulo 3
-[13
-
-
-] [14
+[15] [16
 
 
 ]
 Cap\'itulo 4
-[15] (monografia.aux)
+[17] (monografia.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17056 strings out of 467871
- 333854 string characters out of 5430401
- 812498 words of memory out of 5000000
- 45484 multiletter control sequences out of 15000+600000
- 638931 words of font info for 83 fonts, out of 8000000 for 9000
+ 17062 strings out of 467871
+ 333975 string characters out of 5430401
+ 814547 words of memory out of 5000000
+ 45489 multiletter control sequences out of 15000+600000
+ 639277 words of font info for 84 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 117i,11n,121p,778b,897s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msam10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on monografia.pdf (17 pages, 44690758 bytes).
+ 117i,11n,121p,784b,897s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msam10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on monografia.pdf (19 pages, 44704333 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
+ 170 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

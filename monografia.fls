@@ -305,6 +305,7 @@ INPUT .\img mono\borient4.png
 INPUT .\img mono\borient4.png
 INPUT .\img mono\borient4.png
 INPUT .\img mono\borient4.png
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmti10.tfm
 INPUT .\img mono\s1.png
 INPUT .\img mono\s1.png
 INPUT .\img mono\s1.png
@@ -350,6 +351,8 @@ INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\symbols\msbm10.pfb
