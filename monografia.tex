@@ -88,9 +88,11 @@ En general, notamos $S^n := \{x\in\R^n : \|x\|=1\}$, y decimos que una $n-$esfer
 
 \comm{agregar: grupo libre, notación}
 
-\chapter{Homología y teorema de Jordan}
+\chapter{Homología simplicial}
 
-En esta sección introduciremos al lector a la teoría de homología singular. El objetivo será probar que una $(n-1)$-esfera separa $\R^n$ en dos componentes conexas, y que estas componentes conexas tienen la misma homología de un punto. \br
+En esta sección introduciremos al lector a la teoría de homología simplicial. Se presentarán algunas definiciones y ejemplos con el objetivo de desarrollar primeras intuiciones sobre la teoría de homología, para luego dar paso a la definición de homología singular en el siguiente capítulo. \br 
+
+% El objetivo será probar que una $(n-1)$-esfera separa $\R^n$ en dos componentes conexas, y que estas componentes conexas tienen la misma homología de un punto. \br
 
 Para empezar, definiremos lo que es un $n$-símplice:\br
 
@@ -147,7 +149,7 @@ Dado un $n$-símplice $[v_0,\dots,v_n]$,  la función $h:\Delta^n\to [v_0,\dots,
 
 La función $h$ es lineal y manda los elementos $e_0,\dots,e_n$ de la base canónica de $\R^{n+1}$ a $v_0,\dots, v_n$ respectivamente, por lo tanto su imagen es el $n$-símplice $[v_0,\dots,v_n]$ y el orden de las aristas se mantiene.\br
 
-Antes de entrar en la definición de homología singular, vamos a definir la homología simplicial, que nos va a dar una imagen de las intuiciones que en la homología singular se ven más ofuscadas a cambio de obtener una teoría menos rígida y más limpia para trabajar.  \br
+Antes de entrar en la definición de homología singular, vamos a definir la homología simplicial, que nos va a dar una imagen de las intuiciones que en la homología singular se ven más ofuscadas a cambio de obtener una teoría menos rígida y más limpia para trabajar.  \comm{cambiar este párrafo}\br
 
 Para empezar, vamos a definir lo que será una estructura de $\Delta$-complejo para un espacio topológico cualquiera. Esto va a ser el análogo en dimensión $n$ de triangular nuestro espacio con $2$-símplices.\br
 
@@ -395,31 +397,32 @@ y todos los demás $H^\Delta_n(X)$ se anulan.
     Un elemento de $\im(\partial_2)$ es también un elemento de $Ker(\partial_1)$, y por lo tanto su imagen pasada por el cociente también es unión de curvas cerradas. Sin embargo, a diferencia de los elementos de $\Ker(\partial_1)$, estas curvas cerradas necesariamente son el borde de algún $\Delta$-complejo de dimensión 2, por ejemplo de un disco.\br
 
     Lo que logra $H_1^\Delta(X)$ es distinguir las curvas cerradas contractibles de las no contractibles en $X$. Es decir, distingue las curvas cerradas que son borde de algún complejo de dimensión 2 de las que bordean un "agujero" en $X$. Dicho usando la nomeclatura de ciclos y bordes, los elementos relevantes para $H_1^\Delta$ son los ciclos que no son borde de ningun $2$-complejo.\br
-
-
 \end{obs}
 
+Finalmente, tiene sentido plantearnos la pregunta: Dadas dos estructuras de $\Delta$-complejo para un mismo espacio $X$, son los grupos $H^\Delta_n(X)$ isomorfos? \br
+
+La respuesta es que si, y veremos la prueba en el siguiente capítulo.
 
 
+\chapter{Homología singular}
 
-
-
-
-
-
-
-\newpage
-En nuestro caso, para definir los grupos de homología singular de un espacio topológico $X$, vamos a concentrarnos en las funciones continuas que van de $\Delta^n$ a $X$. Llamaremos a estos mapas $n$-símplices singulares. 
+El objetivo de este capítulo será definir los grupos de homología singular de un espacio topológico $X$. Esta definición es muy similar a la vista en el capítulo anterior, con la notoria diferencia de que en vez de considerar una estructura de $\Delta$-complejo para $X$, directamente tomamos el cociente en la familia de todas las funciones $\sigma:\Delta^n\to X$.
 
 \begin{df}
     Un $n$-símplice singular es una función continua $\sigma:\Delta^n\to X$.
 \end{df}
+
+El nombre "singular" hace referencia a que $\sigma$ no tiene por qué ser inyectiva, por lo tanto no necesariamente es un encaje. Esto significa que la imagen de $\sigma$ puede tener singularidades, es decir, puntos de autointersección. \br
+
+\duda{acá solo dice que puede tener "sigularidades" pero no explica, yo lo interpreto así, como puntos de autointersección, pero capaz hay algo más que se me está pasando?}
 
 \begin{df}
     Llamaremos complejo de $n$-cadenas singulares, que notaremos $C_n(X)$, al grupo abeliano libre que tiene como base a los elementos de la familia de funciones $\{\sigma:\Delta^n\to X \;\vert\; \sigma \text{ continua}\}$. \br
 
     Es decir, los elementos de $C_n(X)$, a los que llamaremos $n$-cadenas singulares, serán sumas formales finitas $\sum_{i=1}^k n_i\sigma_i$, con $n_i\in\Z$, y $\sigma_i:\Delta^n\to X$.
 \end{df}
+
+Comparados con su equivalente $\Delta^n(X)$ del capítulo anterior, los complejos de $n$-cadenas singulares $C_n(X)$ tienen un cardinal mucho más grande, y en la mayoría de los casos serán  grupos no numerables. \br
 
 \begin{df}
     Definimos un mapa borde $\partial_n:\Ch\to\ch$ dado por $$\partial_n(\sigma):= \sum\limits_{i=0}^{n}(-1)^i \sigma |_{[v_0,\dots,\hat{v_i},\dots,v_n]}$$
