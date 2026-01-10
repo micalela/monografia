@@ -425,8 +425,34 @@ El nombre "singular" hace referencia a que $\sigma$ no tiene por qué ser inyect
 Comparados con su equivalente $\Delta^n(X)$ del capítulo anterior, los complejos de $n$-cadenas singulares $C_n(X)$ tienen un cardinal mucho más grande, y en la mayoría de los casos serán  grupos no numerables. \br
 
 \begin{df}
-    Definimos un mapa borde $\partial_n:\Ch\to\ch$ dado por $$\partial_n(\sigma):= \sum\limits_{i=0}^{n}(-1)^i \sigma |_{[v_0,\dots,\hat{v_i},\dots,v_n]}$$
+    Definimos un mapa borde $\partial_n:\Ch\to\ch$ dado por $$\partial_n(\sigma):= \sum\limits_{i=0}^{n}(-1)^i \sigma |_{[v_0,\dots,\hat{v_i},\dots,v_n]}$$ 
+    Donde estamos notando $\Delta^n$ como $[v_0,\dots,v_n]$ e identificando $[v_0,\dots,\hat{v_i},\dots,v_n]$ con $\Delta_{n-1}$ mediante el homeomorfismo canónico.
 \end{df}
+
+En algunos casos simplemente usaremos $\partial$ para notar este mapa.\br
+
+Exactamente de la misma forma que en el capítulo anterior, obtenemos que la composición $\partial_{n-1}\circ\partial_n :C_{n}(X)\to C_{n-2}(X)$ es cero. Por lo tanto tenemos $\im(\partial_{n-1})\subset\Ker(\partial_{n})$ y podemos definir los grupos de homología singular.\br
+
+\begin{df}
+Definimos el $n$-ésimo grupo de homología singular del complejo de cadenas como el cociente $$H_n(X):=\Ker(\partial_n)/\im(\partial_{n+1})$$\br
+
+De la misma forma que antes llamaremos ciclos a los elementos de $\Ker(\partial_n)$, bordes a los de $\im(\partial_{n+1})$ y los elementos de $H_n(X)$ serán nuestras clases de homología singular.\br 
+\end{df}
+
+Con esta definición, obtenemos trivialmente un resultado importante para la teoría.
+
+\begin{prop}
+Si $X$, $Y$ son homeomorfos, entonces $H(X)=H(Y)$
+\end{prop}
+\begin{proof}
+Sean $h:X\to Y$ homeomorfismo. Dada $sigma:\Delta^n\to X$ continua, consideramos su composición $h\circ\sigma$
+\end{proof}
+
+
+
+
+
+
 
 
 
